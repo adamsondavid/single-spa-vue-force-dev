@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "description": "A browser extension that forces all vue applications into dev mode. Works well together with single-spa.",
   "author": "David Adamson",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "postinstall": "patch-package",
