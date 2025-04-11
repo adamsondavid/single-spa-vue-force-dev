@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     webExtension({
       manifest: () => ({
-        name: pkg.name,
+        name: "single-spa Vue Force Dev",
         description: pkg.description,
         version: pkg.version,
         manifest_version: 3,
