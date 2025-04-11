@@ -7,10 +7,11 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "postinstall": "patch-package",
     "dev": "vite",
     "check:format": "prettier --check --ignore-path .gitignore .",
-    "build": "vite build"
+    "build": "vite build",
+    "postinstall": "patch-package",
+    "postversion": "npm run build"
   },
   "dependencies": {
     "pinia": "^3.0.2"
