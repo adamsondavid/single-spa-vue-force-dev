@@ -6,7 +6,7 @@
     [
       "@semantic-release/exec",
       {
-        "prepareCmd": "npm run build"
+        "prepareCmd": "npm run build && cd dist && zip -r extension.zip ."
       }
     ],
     [

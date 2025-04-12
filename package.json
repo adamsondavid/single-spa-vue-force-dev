@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "vite",
     "check:format": "prettier --check --ignore-path .gitignore .",
-    "build": "vite build && cd dist && zip -r extension.zip .",
+    "build": "vite build",
     "postinstall": "patch-package"
   },
   "dependencies": {
