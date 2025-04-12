@@ -10,13 +10,13 @@
     "dev": "vite",
     "check:format": "prettier --check --ignore-path .gitignore .",
     "build": "vite build && cd dist && zip -r extension.zip .",
-    "postinstall": "patch-package",
-    "postversion": "npm run build"
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "pinia": "^3.0.2"
   },
   "devDependencies": {
+    "@semantic-release/exec": "^7.0.3",
     "patch-package": "^8.0.0",
     "prettier": "^3.5.3",
     "semantic-release": "^24.2.3",
