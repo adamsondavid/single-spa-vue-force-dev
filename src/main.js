@@ -8,7 +8,7 @@ setTimeout(() => {
     const pinia = app.config.globalProperties.$pinia;
     if (!pinia) return;
     pinia.use(devtoolsPlugin);
-    registerPiniaDevtools(vueRootInstance, pinia);
+    registerPiniaDevtools(app, pinia);
   }
 
   function initApp(app) {
