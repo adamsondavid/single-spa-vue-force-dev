@@ -11,10 +11,8 @@ setTimeout(() => {
     registerPiniaDevtools(vueRootInstance, pinia);
   }
 
-  const initializedApps = new Set();
   function initApp(app) {
-    if (initializedApps.has(app)) return;
-    initializedApps.add(app);
+    if (devtools.apps.includes(app)) return;
 
     devtools.emit("app:init", app, app.version, {
       Fragment: Symbol.for("v-fgt"),
