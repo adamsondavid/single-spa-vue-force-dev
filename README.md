@@ -13,7 +13,7 @@ A browser plugin that forces production builds of Vue applications into developm
 ## Installation 📥
 
 1. Install the plugin from your browser's marketplace: [Google Chrome](https://chromewebstore.google.com/detail/single-spa-vue-force-dev/lcpbpknakdcmhgkjdfadnfcaiifghhjk)
-3. Make sure you have the Vue Devtools installed, as our plugin heavily depends on it.
+2. Make sure you have the Vue Devtools installed, as our plugin heavily depends on it.
 
 ## Usage 🚀
 
