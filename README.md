@@ -1,5 +1,7 @@
 # single-spa-vue-force-dev
 
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/lcpbpknakdcmhgkjdfadnfcaiifghhjk)](https://chromewebstore.google.com/detail/single-spa-vue-force-dev/lcpbpknakdcmhgkjdfadnfcaiifghhjk)
+
 A browser plugin that forces production builds of Vue applications into development mode to make them visible in the Vue Devtools. Optimized for use with [single-spa](https://single-spa.js.org/), it handles multiple Vue instances and automatically scans and indexes them on single-spa change events.
 
 ## Features ✨
@@ -10,8 +12,8 @@ A browser plugin that forces production builds of Vue applications into developm
 
 ## Installation 📥
 
-1. Install the plugin from your browser's marketplace (open TODO - plugin not published yet! 🚧).
-2. Make sure you have the Vue Devtools installed, as our plugin heavily depends on it.
+1. Install the plugin from your browser's marketplace: [Google Chrome](https://chromewebstore.google.com/detail/single-spa-vue-force-dev/lcpbpknakdcmhgkjdfadnfcaiifghhjk)
+3. Make sure you have the Vue Devtools installed, as our plugin heavily depends on it.
 
 ## Usage 🚀
 
