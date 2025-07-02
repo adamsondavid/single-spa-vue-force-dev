@@ -24,7 +24,7 @@ setTimeout(() => {
     try {
       enablePiniaDevtools(app);
     } catch (e) {
-      console.error("[single-spa-vue-force-dev] failed to enable pinia devtools", e);
+      console.error("[single-spa-vue-force-dev] failed to enable pinia devtools.", e);
     }
   }
 
