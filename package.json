@@ -19,7 +19,7 @@
     "@semantic-release/exec": "^7.1.0",
     "patch-package": "^8.0.1",
     "prettier": "^3.6.2",
-    "semantic-release": "^24.2.7",
+    "semantic-release": "^25.0.2",
     "vite": "^7.1.11",
     "vite-plugin-web-extension": "^4.4.5",
     "webextension-polyfill": "^0.12.0"
