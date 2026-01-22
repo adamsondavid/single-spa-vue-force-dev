@@ -1,8 +1,8 @@
 diff --git a/node_modules/pinia/dist/pinia.mjs b/node_modules/pinia/dist/pinia.mjs
-index 5b08908..66292a3 100644
+index 4a25b54..ca2fac9 100644
 --- a/node_modules/pinia/dist/pinia.mjs
 +++ b/node_modules/pinia/dist/pinia.mjs
-@@ -527,7 +527,7 @@ const getStoreType = (id) => '🍍 ' + id;
+@@ -536,7 +536,7 @@ const getStoreType = (id) => '🍍 ' + id;
   * @param app - Vue application
   * @param pinia - pinia instance
   */
@@ -11,7 +11,7 @@ index 5b08908..66292a3 100644
      setupDevtoolsPlugin({
          id: 'dev.esm.pinia',
          label: 'Pinia 🍍',
-@@ -953,7 +953,7 @@ function patchActionForGrouping(store, actionNames, wrapWithProxy) {
+@@ -962,7 +962,7 @@ function patchActionForGrouping(store, actionNames, wrapWithProxy) {
  /**
   * pinia.use(devtoolsPlugin)
   */
