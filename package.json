@@ -9,11 +9,11 @@
   "scripts": {
     "dev": "vite",
     "check:format": "prettier --check --ignore-path .gitignore .",
-    "build": "vite build",
+    "build": "sh ./build.sh",
     "postinstall": "patch-package"
   },
   "dependencies": {
-    "pinia": "^3.0.4"
+    "pinia": "3.0.4"
   },
   "devDependencies": {
     "@semantic-release/exec": "^7.1.0",
