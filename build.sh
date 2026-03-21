@@ -4,8 +4,7 @@ rm -rf dist
 vite build
 cp LICENSE dist/LICENSE
 
-IFS=$'\n'
-for dep_path in $(npm ls --depth=0 --omit=dev --parseable --long=false 2>/dev/null | tail -n +2); do
+npm ls --depth=0 --omit=dev --parseable --long=false --silent 2>/dev/null | tail -n +2 | while IFS= read -r dep_path; do
   echo $dep_path
   if [ -f "$dep_path/LICENSE" ]; then
     dep_name=$(basename "$dep_path")
