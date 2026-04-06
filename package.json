@@ -20,7 +20,7 @@
     "patch-package": "^8.0.1",
     "prettier": "^3.8.1",
     "semantic-release": "^25.0.3",
-    "vite": "^8.0.1",
+    "vite": "^8.0.5",
     "vite-plugin-web-extension": "^4.5.0",
     "webextension-polyfill": "^0.12.0"
   }
