@@ -1,0 +1,55 @@
+version: 2
+updates:
+  # Production dependencies, minor & patch updates — grouped, patch release
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 999
+    allow:
+      - dependency-type: "production"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+    commit-message:
+      prefix: "fix"
+    groups:
+      minor-and-patch:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # Production dependencies, major updates — separate PRs, minor release as a starting point
+  # Review each one: bump to "feat!" / add a "BREAKING CHANGE:" footer manually
+  # in the PR body if the upstream break actually affects your package's public API.
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 999
+    allow:
+      - dependency-type: "production"
+    ignore:
+      - dependency-name: "*"
+        update-types:
+          - "version-update:semver-minor"
+          - "version-update:semver-patch"
+    commit-message:
+      prefix: "feat"
+
+  # Dev dependencies — no release impact, grouped together regardless of semver level
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 999
+    allow:
+      - dependency-type: "development"
+    commit-message:
+      prefix: "chore"
+    groups:
+      dev-dependencies:
+        patterns:
+          - "*"
