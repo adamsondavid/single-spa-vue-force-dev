@@ -13,7 +13,7 @@
     "postinstall": "patch-package"
   },
   "dependencies": {
-    "pinia": "3.0.4"
+    "pinia": "4.0.2"
   },
   "devDependencies": {
     "@semantic-release/exec": "^7.1.0",
