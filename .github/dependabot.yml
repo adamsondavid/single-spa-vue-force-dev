@@ -16,6 +16,9 @@ updates:
         update-types:
           - "minor"
           - "patch"
-      # Dev deps, any semver level — grouped into one PR, "chore:" prefix -> no release
-      dev-dependencies:
+      # Dev deps, minor & patch — grouped into one PR, "chore:" prefix -> no release
+      dev-minor-and-patch:
         dependency-type: "development"
+        update-types:
+          - "minor"
+          - "patch"
