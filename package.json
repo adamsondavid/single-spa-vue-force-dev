@@ -18,9 +18,9 @@
   "devDependencies": {
     "@semantic-release/exec": "^7.1.0",
     "patch-package": "^8.0.1",
-    "prettier": "^3.9.6",
+    "prettier": "^3.9.9",
     "semantic-release": "^25.0.9",
-    "vite": "^8.2.2",
+    "vite": "^8.3.1",
     "vite-plugin-web-extension": "^4.5.1",
     "webextension-polyfill": "^0.12.0"
   }
